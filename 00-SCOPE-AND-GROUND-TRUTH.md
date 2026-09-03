@@ -1,6 +1,7 @@
 # 00. Scope and Ground Truth
 
 **Prepared:** 3 September 2026
+**Amended:** 3 September 2026, Cairnline amendments 1 to 3. See section 1A.
 **Purpose:** internal corporate development input. Not shown to the asset's founder. Not a marketing document.
 **Status of this run:** Phase 1 and Phase 2 complete. Phases 3, 4 and 5 are held at the Phase 1 gate.
 
@@ -10,31 +11,131 @@
 
 Every direct page fetch attempted in this session was refused by the organization's egress proxy,
 which answered `403` to `CONNECT` on every host tried, including `canada.ca`, `sec.gov` and
-`en.wikipedia.org`. Only the search tool was operable. No source page was opened.
+`en.wikipedia.org`. A re-probe on 3 September of `mindfulmaterials.com`, `usgbc.org` and
+`hpd-collaborative.org` returned no connection. Only the search tool was operable. No source page
+has been opened at any point in this project.
 
-The consequence is specific and it is not cosmetic. The evidence rule in force states that
-`Verified` requires a live URL **and** a verbatim snippet containing the claim, and that 403 sources
-are `Unverifiable`, not `Verified`. Every source page behind every market claim in this analysis
-returned 403. Therefore:
+**Status vocabulary, as amended.** The original rule collapsed two different things into
+`Unverifiable`: a source that refused, and a proxy that refused. Those are findings about different
+subjects, and conflating them would let a tooling limit be read as a fact about a target. A fourth
+status is therefore in force:
 
-> **No external market claim in this run carries `Verified`. All 53 source-asserted rows in
-> `ledger/claims.csv` are `Unverifiable` with the reason recorded.**
+| Status | Scope |
+|---|---|
+| `Verified` | Live source reached and a verbatim snippet captured |
+| `Blocked` | **This session's own egress proxy refused the host.** A finding about our tooling, not about the source |
+| `Unverifiable` | The remote source refused, or a search ran and returned nothing |
+| `Not Tested` | Not empirically tested. Inferences and principal-supplied facts |
 
-The four `Verified` rows are in-session process facts observed directly (the proxy status output,
-the absence of the attachments from the repository, the substitution of the correction memo as the
-register source of truth). No market claim is among them.
+Ledger distribution after re-grading, 94 rows:
+
+| Status | Rows |
+|---|---:|
+| `Blocked` | 50 |
+| `Not Tested` | 30 |
+| `Unverifiable` | 8 |
+| `Verified` | 6 |
+
+The 8 `Unverifiable` rows are genuine findings: null searches for the ISO 9001 certificate, a Green
+Badger transaction, EPD programme operator transactions, a One Click LCA acquisition of EPD Hub, an
+Anguleris sustainability data strategy, an independent statement of EcoSpex scale, an EcoSpex patent
+filing, and the HPDC data module ship status. The 6 `Verified` rows are in-session process facts.
 
 What this does and does not mean:
 
-- It does **not** mean the facts are wrong. Most are corroborated across several independent
-  outlets returned by search, and the URLs are named and live.
-- It **does** mean nobody has read the source text. A snippet recorded in the ledger is
-  search-engine-rendered summary text, labelled as such in every row.
-- The fix is one permission change. If the egress allowlist is opened, every `Unverifiable` row in
-  the ledger can be re-tested and re-graded without redoing any analysis. The ledger is built for
-  exactly that: statuses are a single column.
+- It does **not** mean the `Blocked` facts are wrong. Most are corroborated across several
+  independent outlets returned by search, and the URLs are named.
+- It **does** mean nobody has read the source text. A snippet in a `Blocked` row is
+  search-engine-rendered summary text, labelled as such in the row.
+- The fix is one permission change, and re-grading is a single-column pass. No analysis is redone.
 
-Treat the analysis as sound and the citations as unaudited until that pass is run.
+## 1A. Amendment 1: the commoditization finding was re-tested first
+
+Finding 1 in `01-ACQUIRER-CATEGORIES.md` is load-bearing, and this analysis identified it as its own
+falsifier and then built the recommendation on it. It was re-tested before anything else. Reading at
+source was not possible, so the test was to widen to sources independent of mindful MATERIALS and
+look for slippage.
+
+**Verdict: the finding holds on its load-bearing leg, and one supporting leg is withdrawn.**
+
+**Strengthened.** BuildingGreen, a trade publication independent of mindful MATERIALS, states that
+in LEED v5 products are assigned a score based on a matrix modelled on the Common Materials
+Framework, and that LEED v5 BD+C reconceives the previous multi-attribute assessment by leveraging
+the CMF, consolidating EPD, responsible sourcing and material health into a unified Building Product
+Selection and Procurement credit. That is CMF inside a published rating system's credit structure,
+not an intention. LEED v5 is mandatory for new registrations from 1 July 2026.
+
+The programme is also older than the analysis had it. The AIA, ILFI, IWBI, USGBC and mindful
+MATERIALS collaboration on CMF adoption dates from 2023. The 2026 Greenbuild statement is an
+expansion of a three-year programme, not a fresh announcement that might slip.
+
+**Withdrawn.** The claim that HPDC would ship a CMF Data Module in the HPD builder by early 2026 did
+not corroborate on a targeted search. It is downgraded and Finding 1 no longer rests on it.
+
+**Substituted, and it cuts harder than the claim it replaces.** HPD Collaborative states that it
+connects HPD Open Standard data from more than 700 manufacturers across more than 10,000 published
+HPD reports with the CMF Portal, **powered by Ecomedes, Inc.** The rating bodies' shared cross-walk
+already has an operating technology partner, and it is the same company that filled its own
+verified-data gap through WAP in June 2026. Category D closes harder, not softer.
+
+## 1B. Amendment 2: the account base is pipeline
+
+Cairnline states that the 60 plus accounts are pipeline rather than contracted revenue, and that the
+IRAP tranche is gated on producing three to five repeatable closes. A tranche gated on producing
+closes is only a gate if the closes have not happened.
+
+This was `OPEN-QUESTIONS.md` Q1, the question this analysis said decides everything. It moves here,
+into ground truth, because it is answered. Applying this analysis's own conditional: categories A
+and B weaken toward zero, and there is little left to buy.
+
+**Do not stop there. The question was framed one level too high.** PEL has been delivered since 2014.
+That is eleven years of some revenue and it is separable from the current pipeline. The question that
+decides the mandate is narrower and it has a document answer:
+
+> **What is PEL's trailing 24 month revenue, how much is contracted forward, are those agreements
+> assignable on change of control, and what share of that revenue was subsidised?**
+
+The fourth part is added here and it is not optional. EcoSpex states that its Premium Verified
+listings carry pilot pricing at a 60 percent discount funded by Ontario's IESO. If a material share
+of trailing PEL revenue was sold at 40 percent of list under a subsidy, that revenue is not evidence
+of willingness to pay, and a buyer will discount the whole book once the subsidy surfaces in
+diligence. Better to know the split before an approach than to have it found.
+
+A second reading worth stating plainly: PEL has run for eleven years and the account base is still
+pipeline. That is a growth-rate fact, and a buyer reads it as one.
+
+This question now outranks the register work. It is the single most valuable document to obtain.
+
+## 1C. Amendment 3: delivery capacity is two people, and one of them is in dispute
+
+Cairnline states that delivery capacity is Julie and James, that James is the core technical
+contributor with an unresolved payment dispute, and that the sale object is effectively an acqui-hire
+requiring the founder personally to transfer and stay.
+
+**This is the most consequential input in the file, and it does two things.**
+
+**First, it breaks the tuck-in framing.** The reframe in `01-ACQUIRER-CATEGORIES.md` says buyers pay
+for billable delivery capacity. The comparables are WAP at close to 100 employees and EcoAct at
+approximately 400. The smallest disclosed value found anywhere in the set is approximately USD 6
+million for Healthy Buildings International, a business founded in 1992. **No transaction in the
+comparable set involved a two-person target.** At two FTE the object of a transaction is not
+capacity. It is a founder retention package plus a dataset, a brand and a set of Ontario
+relationships. Categories A and B do not merely weaken; the thing being sold changes.
+
+**Second, and more urgently: the dispute and the chain-of-title gap are one problem, not two.**
+
+The register records no chain of title on any of its 38 rows. James is the core technical
+contributor. James has an unresolved payment dispute. A contributor who is owed money and holds no
+signed IP assignment is not a personnel matter sitting beside a documentation matter. It is a single
+ownership risk with a motivated counterparty and a colourable position over the technical assets.
+
+It survives both deal shapes. In an asset purchase, the buyer's counsel asks for his assignment on
+day one and there is not one. In a share purchase it travels with the entity. In either case it is
+among the first three things any diligence process surfaces, and surfacing it during an approach
+rather than before one costs the seller control of the narrative.
+
+**It should be resolved before any target is contacted.** That is a sequencing instruction for Phase
+5 and it is stated here so it cannot be missed.
 
 ## 2. Inputs
 

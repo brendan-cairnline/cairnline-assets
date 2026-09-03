@@ -7,13 +7,17 @@ organization's egress proxy answered `403` to `CONNECT` on every host attempted,
 `canada.ca`, `sec.gov` and `en.wikipedia.org`. The only source content available was
 search-engine-rendered summary text.
 
-Consequently every source-asserted claim in this project carries status `Unverifiable` in
-`ledger/claims.csv`, with the block recorded per row. These URLs are the re-verification queue, not
-a bibliography of read material.
+Consequently 50 rows in `ledger/claims.csv` carry status `Blocked`, scoped to this session's own
+proxy refusing the host, and distinguished from `Unverifiable`, which is now reserved for remote
+refusals and for searches that ran and returned nothing. These URLs are the re-verification queue,
+not a bibliography of read material.
+
+Amended 3 September 2026: the CMF chain was re-tested ahead of everything else. Sources added for
+that test are marked below.
 
 ---
 
-## Verified in session (4 rows)
+## Verified in session (6 rows)
 
 These are process facts observed directly, not market claims.
 
@@ -70,6 +74,11 @@ in any deliverable derives from the Drive copy.
 |---|---|
 | CMF, shared language | `https://www.mindfulmaterials.com/a-common-language` |
 | CMF, rating system alignment (Greenbuild 2026) | `https://www.mindfulmaterials.com/rating-systems-program-partner-relationships` |
+| **Amendment 1.** CMF inside the LEED v5 credit structure, independent source | `https://www.buildinggreen.com/blog/leed-v5-catching-decarbonization-equity-and-resilience` |
+| **Amendment 1.** CMF collaboration announced 2023, predates the 2026 statement | `https://workinmind.org/2023/11/23/common-materials-framework-championed-industry-figureheads/` |
+| **Amendment 1.** CMF Portal powered by Ecomedes; 700+ manufacturers, 10,000+ HPDs | `https://www.hpd-collaborative.org/hpd-collaborative-supports-mindful-materials-common-materials-framework-new-digital-portal/` |
+| **Amendment 1.** HPD Open Standard v3.0 effective 29 Sept 2025 | `https://www.hpd-collaborative.org/hpd-builder/` |
+| LEED v5 materials and resources, USGBC | `https://www.usgbc.org/articles/leed-v5-next-chapter-materials-management` |
 | CMF Data Ecosystem report and HPDC data module | `https://www.mindfulmaterials.com/post/mindful-materials-launches-data-ecosystem-report-unveiling-vision-for-a-connected-future-of-sustain` |
 | CMF implementation toolkit | `https://www.mindfulmaterials.com/cmf-implementation-toolkit` |
 | Building Transparency EC3 and API partners | `https://www.buildingtransparency.org/tools/ec3/` |

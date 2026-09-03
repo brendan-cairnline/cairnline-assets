@@ -5,19 +5,76 @@ resolve it. Ordered by how much the answer changes the analysis.
 
 ---
 
+## Tier 0: the two items that gate everything else
+
+### Q0. What is PEL's trailing 24 month revenue, and what share of it was subsidised?
+
+**This is the single most valuable document to obtain and it outranks the register work.**
+
+Q1 as originally written asked whether the 60 plus accounts were contracted or pipeline. Cairnline
+has answered it: **they are pipeline**, and the IRAP tranche is gated on producing three to five
+repeatable closes, which is only a gate if the closes have not happened. That answer is now ground
+truth, in `00-SCOPE-AND-GROUND-TRUTH.md` section 1B, not an open question.
+
+But the question was framed one level too high. PEL has been delivered since 2014, which is eleven
+years of some revenue, and it is separable from the current pipeline. The narrower question decides
+the mandate:
+
+1. PEL trailing 24 month revenue.
+2. How much of it is contracted forward.
+3. Whether those agreements are assignable on change of control.
+4. **What share of it was sold under the IESO subsidy.**
+
+Part 4 is the one most likely to be skipped and it changes the reading of the other three. EcoSpex
+states that its Premium Verified listings carry pilot pricing at a 60 percent discount funded by
+Ontario's IESO. Revenue booked at 40 percent of list under a subsidy is not evidence of willingness
+to pay at list. A buyer that discovers the subsidy in diligence discounts the whole book, and finding
+it themselves is worse than being told.
+
+**Resolves with:** two years of PEL invoices or the revenue schedule from the accounts, plus the
+customer agreements themselves. Not a CRM export, and not a summary. The assignability clause is the
+part a buyer's counsel reads first, and the subsidy split will only be visible on the invoices.
+
+**If the number is small or mostly subsidised:** categories A and B close, and the mandate becomes a
+licensing or channel question rather than a sale. Phase 3 should be allowed to reach that conclusion.
+
+### Q0b. Is the James position resolved, in writing?
+
+**Highest-severity item in the file, and it is a sequencing constraint, not a research question.**
+
+The register records no chain of title on any of its 38 rows. James is the core technical
+contributor. James has an unresolved payment dispute. Those are not two problems. A contributor who
+is owed money and holds no signed IP assignment is a single ownership risk with a motivated
+counterparty and a colourable position over the technical assets.
+
+It survives both deal shapes. In an asset purchase the buyer's counsel asks for his assignment on
+day one and there is not one. In a share purchase it travels with the entity.
+
+**Resolves with:** a settlement of the payment dispute and a signed IP assignment covering everything
+he contributed, executed and dated. Nothing less closes it, and a verbal assurance is worth nothing
+in a data room.
+
+**No target should be approached until this is closed.** Approaching first means disclosing it under
+pressure at the buyer's timing rather than the seller's.
+
+---
+
 ## Tier 1: answers that change the recommendation
 
-### Q1. Are the approximately 60 accounts contracted revenue or pipeline?
+### Q1. Will the founder commit to transfer and stay, and on what terms?
 
-**Why it decides everything.** Both surviving acquirer categories, TIC roll-ups and engineering
-consultancies, buy on billable delivery capacity and a transferable book. If the accounts are
-contracted and recurring, the asset is a straightforward tuck-in with a priceable book. If they are
-pipeline, there is very little to sell, because the methodology will not carry the transaction on
-its own.
+**Why it now sits here.** Delivery capacity is two people. At that size the founder is the delivery
+capacity, so every surviving acquirer category is buying a retention arrangement whether or not the
+transaction is described that way. If she will not commit, categories A and B close regardless of
+what Q0 returns.
 
-**Resolves with:** the PEL customer list with, per account, contract status, term, renewal date,
-annual value, and whether the agreement is assignable on change of control. A CRM export is not
-sufficient; the assignability clause is the part a buyer's counsel reads first.
+The comparables underline how unusual this is. WAP had close to 100 employees. EcoAct had roughly
+400. The smallest disclosed value found anywhere in the set is approximately USD 6 million for a
+business founded in 1992. No transaction in the comparable set involved a two-person target.
+
+**Resolves with:** a direct conversation, before any approach, covering minimum term, role, and what
+she would accept as an earnout structure. A buyer will ask in the first meeting and the answer needs
+to exist before then.
 
 ### Q2. What is the chain of title on each asset, and what happened during the period of unsigned third-party access?
 
@@ -113,14 +170,20 @@ in full. Note that this is one of the items the egress block prevented from bein
 
 ### Q10. Verbatim confirmation of every source-asserted claim
 
-**Why.** The organization's egress proxy answered 403 to CONNECT on every host attempted. No source
-page was opened. All 53 source-asserted ledger rows are therefore `Unverifiable` rather than
-`Verified`, including claims that are almost certainly correct and corroborated across several
-independent outlets.
+**Why.** The organization's egress proxy answered 403 to CONNECT on every host attempted, and a
+re-probe on 3 September of the three CMF hosts returned no connection. No source page has been
+opened. 50 ledger rows carry status `Blocked`, which is scoped to this session's own proxy refusing
+the host and is deliberately distinguished from `Unverifiable`, so that a tooling limit is not read
+as a finding about a target.
 
 **Resolves with:** opening the egress allowlist, then a re-verification pass over `ledger/claims.csv`
 that opens each named URL and records a verbatim snippet. No analysis has to be redone. Status is a
 single column and the URLs are already recorded.
+
+**Note on sequencing.** Per Amendment 1 this is no longer a uniform bulk pass. The CMF chain was
+re-tested first, by widening to independent sources because reading at source was not possible. That
+test returned a mixed result, recorded in `00-SCOPE-AND-GROUND-TRUTH.md` section 1A: the LEED v5 leg
+strengthened, the HPDC data module leg was withdrawn. The remaining rows can now run as a batch.
 
 **Priority URLs for that pass**, in order of how much weight they carry:
 
@@ -142,6 +205,17 @@ task assumed.
 **Resolves with:** a corporate registry search on the acquired Canadian entities (Coldstream
 Consulting is the useful one), or a conversation with an M&A adviser active in TIC tuck-ins. Neither
 was possible with egress blocked.
+
+### Q12. Did HPDC ship the CMF Data Module, and what is the CMF Portal's current scope?
+
+**Why.** This analysis previously carried the claim that HPDC would ship a CMF Data Module in the HPD
+builder by early 2026. A targeted search returned no ship confirmation, so the claim is withdrawn and
+Finding 1 no longer rests on it. What corroborated instead is that HPDC connects data from more than
+700 manufacturers across more than 10,000 published HPD reports with the CMF Portal, powered by
+Ecomedes. That is a stronger fact for the analysis, but its scope and current state are unread.
+
+**Resolves with:** the HPDC announcement page and the CMF Portal itself, read at source. Both hosts
+are currently blocked.
 
 ---
 

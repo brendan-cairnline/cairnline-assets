@@ -4,8 +4,15 @@
 > No company profiles have been built. If the framing below is wrong, it is cheap to fix now and
 > expensive to fix after 100 organizations have been scored.
 
-**Evidence grade:** every source page behind this document returned 403 at the egress proxy.
-No claim here carries `Verified`. See `00-SCOPE-AND-GROUND-TRUTH.md` section 1.
+**Evidence grade:** every source page behind this document was refused by this session's own egress
+proxy and carries status `Blocked`, not `Unverifiable`. See `00-SCOPE-AND-GROUND-TRUTH.md` section 1.
+
+**Amended 3 September 2026.** Three inputs arrived after this document was first written and they
+change its conclusions rather than decorate them. Read `00-SCOPE-AND-GROUND-TRUTH.md` sections 1A to
+1C first. In short: Finding 1 was re-tested and holds on its load-bearing leg; the account base is
+pipeline, not contracted; and delivery capacity is two people, one of whom is in an unresolved
+payment dispute. The net effect is that categories A and B survive as categories but the object of
+the transaction changes, and the mandate may not be a sale.
 
 ---
 
@@ -49,8 +56,20 @@ High. The sell side's own assessment and the market's direction point the same w
 claims about AI and about 100 percent accuracy are excluded from this reasoning entirely, and
 excluding them costs the argument nothing, because the external evidence is sufficient on its own.
 
+**Re-tested 3 September 2026 (Amendment 1). The finding holds on its load-bearing leg.**
+BuildingGreen, independent of mindful MATERIALS, describes LEED v5 as scoring products on a matrix
+modelled on the CMF and reconceiving multi-attribute assessment by leveraging it. That is CMF inside
+a published credit structure, and LEED v5 is mandatory for new registrations from 1 July 2026. The
+collaboration also dates from 2023, so this is a three-year programme that has landed, not a 2026
+announcement that might slip. One supporting leg is withdrawn: the HPDC CMF Data Module ship claim
+did not corroborate. It is replaced by a harder fact, that the CMF Portal is powered by Ecomedes.
+
 **Implication: the dataset and the mapping logic are not what anyone will pay for. The service, the
 accounts and the geography are.**
+
+**Amendment 2 removes two of those three.** The account base is pipeline, not contracted revenue.
+What remains that is unambiguously saleable is PEL's actual trailing revenue, the brand, and the
+Ontario institutional relationships. See `00-SCOPE-AND-GROUND-TRUTH.md` section 1B.
 
 ### Finding 2. The distribution layer has no unfilled gap this asset closes
 
@@ -93,10 +112,10 @@ methodology was the object of a purchase. See `02-TRANSACTION-COMPS.md`.
 
 | # | Category | Candidates | New | Deal shape | Verdict |
 |---|---|---:|---:|---|---|
-| A | TIC firms and their roll-ups | 18 | 18 | Asset, or share for the Canadian entity | **Confirmed, reframed** |
-| B | Engineering and environmental consultancies | 18 | 18 | Asset (tuck-in) | **Confirmed** |
+| A | TIC firms and their roll-ups | 18 | 18 | Asset, or share for the Canadian entity | **Confirmed, reframed twice.** Retention-and-assets deal, not a capacity tuck-in |
+| B | Engineering and environmental consultancies | 18 | 18 | Asset | **Downgraded to conditional.** Falsifier fired: the book is pipeline |
 | C | EPD programme operators and certifiers | 9 | 5 | Asset | **Partial, weak** |
-| D | Specifier and materials platforms | 11 | 11 | Asset | **Rejected as buyers.** Channel only |
+| D | Specifier and materials platforms | 11 | 11 | Asset | **Rejected as buyers**, higher confidence. Channel only |
 | E | Building product data aggregators and manufacturer marketing platforms | 9 | 2 | Asset | **Rejected as buyers.** Channel only |
 | F | LCA and embodied carbon software | 10 | 9 | Asset | **Rejected** |
 | G | BIM and design ecosystem incumbents | 7 | 6 | Share | **Rejected** |
@@ -106,8 +125,12 @@ methodology was the object of a purchase. See `02-TRANSACTION-COMPS.md`.
 | K | Manufacturer corporate venture arms | 11 | 11 | Minority, not acquisition | **Rejected** |
 | L | Public-sector procurement and Buy Clean vendors | 6 | 1 | n/a | **Reclassified** as a demand driver, not a buyer category |
 
-Four categories survive as acquirers: A, B, I, and C at low weight. Seven are rejected. One is
-reclassified.
+Four categories survive as acquirers: A, B (conditional), I, and C at low weight. Seven are
+rejected. One is reclassified.
+
+**Post-amendment reading.** A, B and I all now depend on the same unanswered number: PEL trailing 24
+month revenue, net of the IESO subsidy. Until that is known, the ranking within these categories is
+less informative than the question of whether any of them clears a minimum deal size at all.
 
 ---
 
@@ -142,7 +165,16 @@ reintroduces full chain-of-title exposure.
 than on billable capacity and client relationships, the category collapses to nothing, because the
 asset cannot win an IP defensibility argument. Nothing found so far suggests they do.
 
-**Verdict: confirmed, reframed. Carry to Phase 3 at the highest weight.**
+**Amendment 3 constraint.** Delivery capacity is two people. Every comparable in this space bought
+tens or hundreds of billable staff. A TIC firm buying "capacity" here is buying one person who must
+agree to transfer and stay, plus a second who is in an unresolved payment dispute and holds no
+signed IP assignment. That is not a capacity acquisition and it should not be presented as one. The
+category survives, but what it would be buying is the dataset, the brand and the Ontario
+relationships, with the founder on a retention arrangement. Price accordingly and expect the buyer
+to structure most of the consideration as earnout or retention.
+
+**Verdict: confirmed as a category, reframed twice. Carry to Phase 3 at the highest weight, but
+scored against a retention-and-assets transaction, not a capacity tuck-in.**
 
 ### B. Engineering and environmental consultancies
 
@@ -165,11 +197,20 @@ Canadian-heavy mid-tier.
 
 **Deal shape.** Asset purchase, tuck-in. Consultancies absorb teams and books of business.
 
-**Falsifier.** If the ~60 accounts turn out to be pipeline rather than contracted, recurring revenue,
-this category has nothing to buy. A consultancy tuck-in is priced on the book. This is the single
-most important thing to establish before any approach.
+**Falsifier, now triggered.** This document originally said that if the ~60 accounts turned out to be
+pipeline rather than contracted recurring revenue, this category would have nothing to buy, because a
+consultancy tuck-in is priced on the book. Amendment 2 states they are pipeline. The falsifier has
+fired and it must be honoured rather than argued around.
 
-**Verdict: confirmed. Carry to Phase 3 at high weight.**
+What survives is narrower and it is not nothing: PEL's actual trailing revenue since 2014, whatever
+that proves to be, plus a Canadian delivery relationship in a market where the federal embodied
+carbon standard extended to steel and whole-building LCA on 1 September 2025. A consultancy with
+Canadian building-products clients and no product-verification bench still has a resourcing problem.
+But it is now a two-person answer to that problem, which is a small answer.
+
+**Verdict: downgraded from confirmed to conditional. Carry to Phase 3 at reduced weight, and hold
+the weighting open until PEL trailing 24 month revenue is known. If that number is small, this
+category closes.**
 
 ### C. EPD programme operators and certifiers
 
@@ -211,7 +252,14 @@ ARCAT, CADdetails, Unifi Labs.
 via the WAP partnership announced 22 June 2026, three months before this analysis. It is a poorly
 timed acquirer and should rank low, not high, precisely because it is the most obvious name.
 
-**Verdict: rejected as acquirers. Retained for Phase 4 as channel.**
+**Amendment 1 closes this further.** HPD Collaborative states that it connects HPD data from more
+than 700 manufacturers across more than 10,000 published HPD reports with the CMF Portal, powered by
+Ecomedes. Ecomedes is not merely a platform that filled its gap. It is the technology partner behind
+the rating bodies' own shared cross-walk portal. The incumbent operator of the thing this asset
+proposes to sell is already in place and already selected.
+
+**Verdict: rejected as acquirers, with higher confidence than at first writing. Retained for Phase 4
+as channel.**
 
 ### E. Building product data aggregators and manufacturer marketing platforms
 
@@ -358,29 +406,53 @@ on the list.**
 
 ## 4. What this means for the approach
 
-If the framing is approved, Phase 3 profiles roughly 48 organizations across categories A, B, C
-(narrowed) and I, not the full 102. The rejected categories are not scored; they are recorded as
-rejected with the falsifier that would reopen them.
+**Phase 3 screens before it profiles.** Section 4.4 of `02-TRANSACTION-COMPS.md` concludes that a
+firm with billions in revenue that has never bought a CAD 2 million business is not a buyer. That is
+a filter, not a scoring dimension, and applying it after profiling wastes the effort it is supposed
+to save. Two screens run in sequence against the ~48 organizations in categories A, B, C (narrowed)
+and I:
+
+1. **Demonstrated acquisition at or below roughly CAD 5 million.** No evidence of a small
+   acquisition means no profile. Being large is not being a buyer.
+2. **No gap-filling event in the last 24 months.** The timing table in `02-TRANSACTION-COMPS.md`
+   section 4.5 already removes eight names on this test.
+
+Expected survivors: 15 to 20. The profiles get better because the effort concentrates, and the
+screen itself is a finding, because a category that loses most of its members to screen 1 was never
+a real category.
 
 Three consequences worth deciding on before Phase 3 runs:
 
-1. **The pitch is capacity and accounts, not IP.** Any approach that leads with proprietary
-   methodology invites the one diligence question the asset cannot survive, and the founder's own
-   Low replication marks are in the register waiting to be found.
-2. **The window is closing and it is measurable.** CMF adoption across five rating bodies and the
-   HPDC data module are dated events, not trends. Each quarter of delay reduces what the mapping
-   logic is worth. The service and the accounts hold their value longer.
+1. **The pitch is not IP, and after Amendment 2 it is not accounts either.** Any approach leading
+   with proprietary methodology invites the one diligence question the asset cannot survive, and the
+   founder's own Low replication marks sit in the register waiting to be found. Any approach leading
+   with the account base invites a request for the contract list, which is pipeline. What is left to
+   lead with is PEL's trailing revenue and the Ontario position, and neither is quantified yet.
+2. **The window is closing and it is measurable.** CMF entered the LEED v5 credit structure and LEED
+   v5 became mandatory for new registrations on 1 July 2026. These are dated events, not trends.
+   Each quarter of delay reduces what the mapping logic is worth.
 3. **The deal-shape question cannot be settled from comparables.** No public statement of structure
    was found for any small private target in the comparable set. It will have to be decided on the
    chain-of-title exposure rather than on precedent. See `02-TRANSACTION-COMPS.md`.
+4. **Nothing should be approached until the James position is resolved.** The unresolved payment
+   dispute with the core technical contributor and the absence of any chain-of-title record are one
+   risk, not two. See `00-SCOPE-AND-GROUND-TRUTH.md` section 1C. This is a sequencing constraint on
+   Phase 5 and it binds regardless of which target ranks first.
+5. **A sale may not be the right instrument, and Phase 3 should be allowed to conclude that.** At
+   two FTE with a pipeline rather than a book, the honest candidate outcomes are an asset purchase at
+   a low number for the data, brand and Ontario relationships with the founder on a consulting
+   agreement, or no sale and a licensing or channel arrangement instead. Phase 3 should not be
+   constructed so that ranking targets is the only permitted output.
 
 ## 5. What would change this analysis
 
 | If this turned out to be false | Effect |
 |---|---|
-| The ~60 accounts are contracted recurring revenue rather than pipeline | Category B strengthens sharply and the asset becomes a straightforward consultancy tuck-in with a priceable book |
-| The ~60 accounts are pipeline only | Categories A and B both weaken to near zero. There would be little left to buy |
+| ~~The ~60 accounts are contracted recurring revenue~~ | **Resolved against. Amendment 2: they are pipeline.** Category B downgraded to conditional, category A reframed |
+| ~~CMF adoption stalls at announcement~~ | **Resolved against. Amendment 1: CMF is inside the LEED v5 credit structure and the programme dates from 2023.** Categories D and F stay closed |
+| PEL trailing 24 month revenue is material and largely unsubsidised | Categories A, B and I all strengthen. This is the live question |
+| PEL trailing 24 month revenue is small, or mostly IESO-subsidised | Categories A and B close. The mandate becomes a licensing or channel question, not a sale |
+| The founder will not commit to transfer and stay | Categories A and B close regardless of revenue, because at two FTE she is the delivery capacity |
+| The James payment dispute and IP assignment are resolved in writing | Removes the highest-severity diligence item and makes a share purchase discussable |
 | A registered ISO 9001 certificate exists and covers the verification scope | Category C strengthens; it is a credential a programme operator recognises |
 | The IESO relationship that EcoSpex states funds its pilot pricing is standing rather than a one-time pilot | Category I strengthens |
-| CMF adoption stalls at announcement and does not ship in LEED v5 tooling | Finding 1 weakens and categories D and F reopen |
-| The chain-of-title gap is closed by a signed assignment | Share purchase becomes viable and category I widens |
